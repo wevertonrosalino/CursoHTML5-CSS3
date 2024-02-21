@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#paragrafo1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to bottom, #37C677, #0f3d23);
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+nav > a:hover {
+    background-color: #0f3d23;
+    padding: 2px;
+}
+
+main {
+    background-color: white;
+    padding: 5px;
+    margin: 0px 150px;
+}
+
+#historia {
+    padding: 10px 10px 20px 10px;
+    text-align: justify;
+}
+
+#versao > h3{
+    margin-left: 10px;
+}
+
+#historia > p {
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'idroid';
+    color: #06642f;
+}
+
+h3 {
+    font-family: 'idroid';
+    color: #155732;
+    background-color: #37C677;
+}
+
+#versao > p{
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+mark {
+    background-color: #06e968c0;
+}
+
+#mascote > h3 {
+    margin: 15px 0px 20px 10px;
+}
+
+article {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+iframe {
+    border: 15px solid #0f3d23;
+    border-radius: 10px;
+}
+
+#learn {
+    background-color: #74e9a7;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#learn > h4 {
+    color: white;
+    background-color: #06642f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.assunto {
+    text-indent: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li::before {
+    content: '✔'; /* Adicione o emoji desejado aqui */
+    margin-right: 0.5em; /* Espaço entre o emoji e o texto */
+}
+
+.container {
+    display: flex;
+}
+  
+  /* Opcional: ajuste a largura ou outros estilos conforme necessário */
+ul {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #06642f;
+}
+

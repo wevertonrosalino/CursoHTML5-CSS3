@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Treinando as imagens Dinâmicas</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Dinâmica">
+<!--Tem que ser na ordem de tamanho-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/Crops - Telecasted.mp3" controls autoplay></audio> controls adiciona o botão de play da música, MP3 WAV OGG -->
+
+    <audio preload="metadata" autoplay controls loop> <!--loop recomeça o audio, self explanatory-->
+        <source src="midia/On the Delta - John Patitucci.mp3" type="audio/mpeg">
+        <source src="midia/On the Delta - John Patitucci.ogg" type="audio/ogg">
+        <source src="midia/On the Delta - John Patitucci.wav" type="audio/wav"> <!--Evitar arquivos wav, pelo peso-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/On the Delta - John Patitucci.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        <!--O parágrafo acima só ira aparecer caso o navegador não tenha compatibilidade com nenhuma opção de áudio(Muito raro hoje em dia)-->
+    </audio>
+    <p>Se seu navegador não conseguir reproduzir o áudio. <a href="midia/On the Delta - John Patitucci.mp3" download="">Clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>

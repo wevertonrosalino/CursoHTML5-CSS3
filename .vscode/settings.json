@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "agile.h": "c",
+        "algorithm": "c"
+    }
+}

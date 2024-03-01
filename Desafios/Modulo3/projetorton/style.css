@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #36BDF5;
+    --cor02: #546C75;
+    --cor03: #5866A0;
+    --cor04: #375AF5;
+    --cor05: #F5C536;
+    --cor06: #F5EB36;
+}
+
+body {
+    
+    background-color: var(--cor01);
+}
+
+header {
+    height: 200px;
+    background-image: url('imagens/social-share-fb.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu-bar {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.menu-bar > a {
+    text-decoration: none;
+    padding: 1%;
+    margin: 5%;
+    background-color: var(--cor01);
+    color: black;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+.menu-bar > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor04);
+    color: white;
+}
+
+.search {
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+#barra {
+    width: 50%;
+    height: 3vh;
+    border-radius: 5px;
+}
+
+#buscar {
+    width: 10%;
+    height: 3.5vh;
+    background-color: rgb(69, 145, 145);
+    border-radius: 5px;
+}
+
+#buscar:hover {
+    background-color: rgb(62, 179, 26);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.452);
+}
+
+section > h1 {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 10px;
+    padding: 10px;
+}
+
+section.imagem {
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.644);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    width: 400px;
+    height: 800px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url('imagens/WhatsApp\ Image\ 2024-03-01\ at\ 16.03.06.jpeg');
+    
+}
+
+#img02 {
+    background-image: url('imagens/WhatsApp\ Image\ 2024-03-01\ at\ 15.16.56.jpeg');
+}
+
+p {
+    margin-left: 5px;
+    padding: 10px;
+    text-indent: 30px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome {
+            background-color: chartreuse;
+        }
+
+        .cprof {
+            background-color: aqua;
+        }
+
+        div.container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>M</td>
+                <td>37</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Thaynara</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Cozinheira</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

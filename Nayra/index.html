@@ -31,11 +31,22 @@
               </audio>
         </section>
     </main>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var audio = document.getElementById("musica");
+
+            audio.volume = 0.02; // Defina o volume desejado entre 0 e 1
+
+            // Adiciona um listener de erro
+            audio.addEventListener('error', function(e) {
+                console.error("Erro ao carregar o arquivo de áudio.", e);
+            });
+
+            // Verifica se o áudio foi carregado corretamente
+            audio.addEventListener('canplaythrough', function() {
+                console.log("Áudio carregado e pronto para reprodução.");
+            });
+        });
+    </script>
 </body>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      var audio = document.getElementById("musica");
-      audio.volume = 0.1; // Defina o volume desejado entre 0 e 1
-    });
-  </script>
 </html>

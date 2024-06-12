@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Te quero pra sempre ❤</h1>
+    </header>
+    <main>
+        <div id="container">
+            
+        </div>
+        
+        <div class="conteudo foto1"></div>
+        <div class="conteudo foto2"></div>
+        <div class="conteudo foto3"></div>
+        <div class="conteudo foto4"></div>
+        <div class="adesivo adesivo1"></div>
+        <div class="adesivo adesivo2"></div>
+        <div class="adesivo adesivo3"></div>
+        <div class="adesivo adesivo4"></div>
+
+        <section>
+            <audio id="musica" autoplay loop>
+                <source src="audio/Dona do Meu Pensamento - Charlie Brown Jr.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+              </audio>
+        </section>
+    </main>
+</body>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      var audio = document.getElementById("musica");
+      audio.volume = 0.1; // Defina o volume desejado entre 0 e 1
+    });
+  </script>
+</html>

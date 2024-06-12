@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Tropical Love';
+    src: url('fontes/Tropical\ Love\ Love.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-fundo: #37E64C;
+    --cor-texto: #E53767;
+    --cor-texto2: #00FA87;
+}
+
+
+
+header {
+    
+}
+
+
+body {
+    background: url(imagens/fundo6.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Tropical Love', Arial, Helvetica, sans-serif;
+    font-size: 4.5em;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0.1em 0 white;
+}
+
+.conteudo {
+    position: absolute;
+    border-radius: 5%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto1 {
+    top: 70%;
+    left: 60%;
+    height: 25vh; /* 25% da altura da tela */
+    width: 25vh; /* 25% da altura da tela */
+    background-image: url(imagens/Foto1.jpg);
+}
+
+.foto2 {
+    top: 20%;
+    right: 60%;
+    height: 25vh; /* 25% da altura da tela */
+    width: 25vh; /* 25% da altura da tela */
+    background-image: url(imagens/Foto2.jpg);
+}
+
+.foto3 {
+    top: 20%;
+    left: 60%;
+    height: 25vh; /* 25% da altura da tela */
+    width: 25vh; /* 25% da altura da tela */
+    background-image: url(imagens/Foto3.jpg);
+}
+
+.foto4 {
+    top: 70%;
+    right: 60%;
+    height: 25vh; /* 25% da altura da tela */
+    width: 25vh; /* 25% da altura da tela */
+    background-image: url(imagens/Foto4.jpg);
+}
+
+.adesivo {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.adesivo1 {
+    top: calc(70vh - 12.5vmin); /* Ajusta a posição do adesivo em relação à altura da tela e ao tamanho do adesivo */
+    left: calc(60vw - 12.5vmin);
+    height: 25vmin; /* Define a altura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    width: 25vmin; /* Define a largura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    background-image: url(imagens/fita-adesiva.png);
+}
+
+.adesivo2 {
+    top: calc(70vh - 12.5vmin); /* Ajusta a posição do adesivo em relação à altura da tela e ao tamanho do adesivo */
+    right: calc(60vw - 12.5vmin);
+    height: 25vmin; /* Define a altura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    width: 25vmin; /* Define a largura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    background-image: url(imagens/fita-adesiva2.png);
+}
+
+.adesivo3 {
+    top: calc(21vh - 12.5vmin); /* Ajusta a posição do adesivo em relação à altura da tela e ao tamanho do adesivo */
+    left: calc(28vw - 12.5vmin);
+    height: 25vmin; /* Define a altura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    width: 25vmin; /* Define a largura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    background-image: url(imagens/fita-adesiva3.png);
+}
+
+
+.adesivo4 {
+    top: calc(21vh - 12.5vmin); /* Ajusta a posição do adesivo em relação à altura da tela e ao tamanho do adesivo */
+    left: calc(72vw - 12.5vmin);
+    height: 25vmin; /* Define a altura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    width: 25vmin; /* Define a largura do adesivo como uma porcentagem do tamanho da janela de visualização */
+    background-image: url(imagens/fita-adesiva4.png);
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Ajuste adicional para telas ainda menores */
+    }
+
+    .adesivo3 {
+        top: calc(21vh - 12.5vmin);
+        left: calc(5vw - 12.5vmin);
+    }
+
+    .adesivo4 {
+        top: calc(21vh - 12.5vmin);
+        left: calc(95vw - 12.5vmin);
+    }
+}

@@ -12,19 +12,6 @@
     padding: 0px;
 }
 
-:root {
-    --cor-fundo: #37E64C;
-    --cor-texto: #E53767;
-    --cor-texto2: #00FA87;
-}
-
-
-
-header {
-    
-}
-
-
 body {
     background: url(imagens/fundo6.jpg) no-repeat;
     background-size: cover;
